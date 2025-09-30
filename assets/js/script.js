@@ -78,7 +78,7 @@ function calculateCost() {
             const today = new Date().toLocaleDateString('de-CH', { day: '2-digit', month: '2-digit', year: 'numeric' });
 
             try {
-                const { dataURL: logoBase64, width: logoWidth, height: logoHeight } = await getBase64Image('logo.png');
+                const { dataURL: logoBase64, width: logoWidth, height: logoHeight } = await getBase64Image('assets/images/logo.png');
 
                 const margin = 20;
                 

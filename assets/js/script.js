@@ -95,7 +95,7 @@ function calculateCost() {
                 doc.setFont('helvetica', 'normal');
                 doc.text("Data Science Lab", margin, 20);
                 doc.text("University of Bern", margin, 25);
-                doc.text("Hochschulstrasse 6", margin, 30);
+                doc.text("Muesmattstrasse 27", margin, 30);
                 doc.text("3012 Bern", margin, 35);
 
                 doc.text(institute, 120, 55);

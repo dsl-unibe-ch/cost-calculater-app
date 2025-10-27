@@ -112,7 +112,7 @@ function calculateCost() {
                 doc.setFontSize(11);
                 doc.setFont('helvetica', 'normal');
                 doc.text(`Dear ${recipientName}`, margin, 120);
-                doc.text("We are pleased to offer the following personnel resources for your project as described below:", margin, 130);
+                doc.text("We are pleased to offer the following resources for your project as described below:", margin, 130);
 
                 const tableTop = 145;
                 const tableRightEdge = pageW - margin;
@@ -122,7 +122,7 @@ function calculateCost() {
                 doc.line(margin, tableTop + 2, tableRightEdge, tableTop + 2);
 
                 doc.setFont('helvetica', 'normal');
-                const description = `Personnel costs for 1 ${expertLevel} Expert at ${percentage}% for ${months} month(s).`;
+                const description = `Service costs for 1 ${expertLevel} Expert at ${percentage}% for ${months} month(s).`;
                 const costText = currencyFormatter.format(costCash).replace('CHF', '').trim();
                 doc.text(description, margin, tableTop + 10, { maxWidth: 130 });
                 doc.text(costText, tableRightEdge, tableTop + 10, { align: 'right' });
